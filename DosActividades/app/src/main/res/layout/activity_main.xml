@@ -15,7 +15,7 @@
     <TextView
         android:text="hola"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:id="@+id/mensaje_principal"
         android:layout_marginTop="80dp"
         android:layout_marginLeft="16dp"
@@ -23,12 +23,13 @@
         android:layout_marginBottom="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textAllCaps="true"
+        android:layout_weight="1"
         android:textAlignment="center" />
 
     <TextView
         android:text="@string/texto_exp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:id="@+id/mensaje_secundario"
         android:layout_margin="16dp"
         android:textAlignment="center"
@@ -37,7 +38,7 @@
     <Button
         android:text="CALCULADORA"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_margin="80dp"
         android:id="@+id/ir_calculadora"
         android:layout_weight="2"

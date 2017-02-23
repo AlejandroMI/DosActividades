@@ -2,6 +2,7 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/activity_calc"
     android:layout_width="match_parent"
@@ -13,12 +14,15 @@
         android:layout_height="0dp"
         android:id="@+id/textView"
         android:layout_weight="1"
-        android:gravity="bottom"
+        android:gravity="right"
         android:padding="16dp"
+        android:layout_marginBottom="16dp"
         android:textAppearance="@android:style/TextAppearance.Material.Display2"
-        android:textAlignment="textEnd"
         android:textColor="?attr/colorAccent"
-        android:background="?android:attr/colorBackground" />
+        android:elevation="6dp"
+        android:background="@drawable/myrect"
+        android:backgroundTint="#ffffff"
+        />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -32,131 +36,57 @@
 
         <TextView
             android:text="7"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora" />
 
         <TextView
             android:text="8"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"/>
 
         <TextView
             android:text="9"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"/>
 
         <TextView
             android:text="4"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"/>
 
         <TextView
             android:text="5"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"/>
 
         <TextView
             android:text="6"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"/>
 
         <TextView
             android:text="1"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"/>
 
         <TextView
             android:text="2"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"/>
 
         <TextView
             android:text="3"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"/>
 
         <TextView
             android:text="+"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"
+            android:textColor="@color/colorPrimary"/>
 
         <TextView
             android:text="0"
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:clickable="true"/>
+            style="@style/botonCalculadora"/>
 
         <TextView
             android:text="="
-            android:layout_gravity="center"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textAppearance="@android:style/TextAppearance.Material.Display2"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
-            android:clickable="true"/>
-
-
-
-
-
+            style="@style/botonCalculadora"
+            android:textColor="@color/colorPrimary"/>
 
 
     </GridLayout>
+
 
 
 </LinearLayout>

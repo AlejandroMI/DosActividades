@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">DosActividades</string>
-
+    <string name="infor">Este es tu resultado, si deseas compartirlo pulsa el botón de compartir o vuelve a la calculadora para hacer una nueva suma</string>
     <string name="texto_exp">Esta es una aplicación para practicar la interacción entre dos actividades distintas, si pulsa el botón inferior, accederá a una calculadora donde puede sumar dos números</string>
 </resources>

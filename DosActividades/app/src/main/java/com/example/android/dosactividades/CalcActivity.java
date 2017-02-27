@@ -1,5 +1,7 @@
 package com.example.android.dosactividades;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,7 +20,7 @@ public class CalcActivity extends AppCompatActivity {
     private CharSequence textoD = ""; //Para poder guardar el texto del display, lo
     //utilizaremos para realizar el cálculo final.
     private int resultado=0; //Guardaremos el resultado final.
-    public int resultadoC=0;
+    private int resultadoC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,7 @@ public class CalcActivity extends AppCompatActivity {
         }else{
 
             calculo();
+            irMain();
         }
     }
 
@@ -57,26 +60,33 @@ public class CalcActivity extends AppCompatActivity {
 
    }
 
+    /**
+     * Sumamos los datos introducimos y guardamos para compartirlos en el Main
+     * */
 
     private void calculo(){
 
-            TextView textoDisplay = (TextView)findViewById(R.id.textoDisplay); //View display
             String[] resultArray= textoD.toString().split("[+]"); //obtenemos todos los sumandos
-            //Los sumamos todos
+
             for (int i=0; i<=resultArray.length-1; i++){
-
                 resultado= resultado +Integer.parseInt(resultArray[i]);
-            }
+            } //Los sumamos todos
 
-            //Representamos el resultado en la pantalla.
-            String result = String.valueOf(resultado);
-            textoDisplay.setText(result);
-
-            //Reseteamos el display y el resultado para poder hacer una nueva suma
-            textoD="";
-            resultadoC=resultado; //Guardamos el resultado para compartirlo.
+            textoD="";//Reseteamos el display y el resultado para poder hacer una nueva suma
+            resultadoC=resultado;  //Guardamos el resultado para compartirlo
             resultado=0;
+
     }
 
+    /**
+     * Volvemos al Main enviando el resultado
+     * */
 
+    private void irMain() {
+
+        Intent resultadoIntent = new Intent();
+        resultadoIntent.putExtra("resultado", String.valueOf(resultadoC));
+        setResult(RESULT_OK, resultadoIntent);
+        finish();
+    }
 }
